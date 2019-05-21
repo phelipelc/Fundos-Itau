@@ -1,0 +1,796 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6E4F544C693BDF6741D3727D /* Pods_Fundos_Itau.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8248DDF743D2F60C38321A6 /* Pods_Fundos_Itau.framework */; };
+		6E91BD542293785C00257AF0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E91BD532293785C00257AF0 /* AppDelegate.swift */; };
+		6E91BD562293785C00257AF0 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E91BD552293785C00257AF0 /* LoginViewController.swift */; };
+		6E91BD592293785C00257AF0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E91BD572293785C00257AF0 /* Main.storyboard */; };
+		6E91BD5B2293785D00257AF0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E91BD5A2293785D00257AF0 /* Assets.xcassets */; };
+		6E91BD5E2293785D00257AF0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E91BD5C2293785D00257AF0 /* LaunchScreen.storyboard */; };
+		6E91BD692293785D00257AF0 /* Fundos_ItauTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E91BD682293785D00257AF0 /* Fundos_ItauTests.swift */; };
+		6E91BD742293785D00257AF0 /* Fundos_ItauUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E91BD732293785D00257AF0 /* Fundos_ItauUITests.swift */; };
+		6E91BD832293857400257AF0 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E91BD822293857400257AF0 /* LoginPresenter.swift */; };
+		6E91BD852293858000257AF0 /* LoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E91BD842293858000257AF0 /* LoginInteractor.swift */; };
+		6E91BD8A22938A4200257AF0 /* Cells.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E91BD8922938A4200257AF0 /* Cells.swift */; };
+		6E91BD8C22938DEF00257AF0 /* LoginProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E91BD8B22938DEF00257AF0 /* LoginProtocol.swift */; };
+		6E91BD8E2293963B00257AF0 /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E91BD8D2293963B00257AF0 /* LoginRouter.swift */; };
+		6E91BD9122939D5900257AF0 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E91BD9022939D5900257AF0 /* Constants.swift */; };
+		7CE006D2C2FBC3A1DFB1AC82 /* Pods_Fundos_ItauTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B1662734D4A0B6E7EB07E20 /* Pods_Fundos_ItauTests.framework */; };
+		C9E51D69EB2E5C372902850B /* Pods_Fundos_ItauUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F07315DD9EA54F1BFE3FB10D /* Pods_Fundos_ItauUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6E91BD652293785D00257AF0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6E91BD482293785C00257AF0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6E91BD4F2293785C00257AF0;
+			remoteInfo = "Fundos-Itau";
+		};
+		6E91BD702293785D00257AF0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6E91BD482293785C00257AF0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6E91BD4F2293785C00257AF0;
+			remoteInfo = "Fundos-Itau";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6E91BD502293785C00257AF0 /* Fundos-Itau.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fundos-Itau.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E91BD532293785C00257AF0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6E91BD552293785C00257AF0 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		6E91BD582293785C00257AF0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6E91BD5A2293785D00257AF0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6E91BD5D2293785D00257AF0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6E91BD5F2293785D00257AF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6E91BD642293785D00257AF0 /* Fundos-ItauTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Fundos-ItauTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E91BD682293785D00257AF0 /* Fundos_ItauTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fundos_ItauTests.swift; sourceTree = "<group>"; };
+		6E91BD6A2293785D00257AF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6E91BD6F2293785D00257AF0 /* Fundos-ItauUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Fundos-ItauUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E91BD732293785D00257AF0 /* Fundos_ItauUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fundos_ItauUITests.swift; sourceTree = "<group>"; };
+		6E91BD752293785D00257AF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6E91BD822293857400257AF0 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
+		6E91BD842293858000257AF0 /* LoginInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInteractor.swift; sourceTree = "<group>"; };
+		6E91BD8922938A4200257AF0 /* Cells.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cells.swift; sourceTree = "<group>"; };
+		6E91BD8B22938DEF00257AF0 /* LoginProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginProtocol.swift; sourceTree = "<group>"; };
+		6E91BD8D2293963B00257AF0 /* LoginRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRouter.swift; sourceTree = "<group>"; };
+		6E91BD9022939D5900257AF0 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		7282156C54F358DB2E87CCC5 /* Pods-Fundos-ItauTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fundos-ItauTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Fundos-ItauTests/Pods-Fundos-ItauTests.release.xcconfig"; sourceTree = "<group>"; };
+		74B1AECD972CE349A8C3E7E2 /* Pods-Fundos-ItauTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fundos-ItauTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Fundos-ItauTests/Pods-Fundos-ItauTests.debug.xcconfig"; sourceTree = "<group>"; };
+		8B1662734D4A0B6E7EB07E20 /* Pods_Fundos_ItauTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Fundos_ItauTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		93D35A94DA15C74978BE51CF /* Pods-Fundos-ItauUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fundos-ItauUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Fundos-ItauUITests/Pods-Fundos-ItauUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		B513D16B8AB4899170F626A9 /* Pods-Fundos-Itau.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fundos-Itau.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Fundos-Itau/Pods-Fundos-Itau.debug.xcconfig"; sourceTree = "<group>"; };
+		C8248DDF743D2F60C38321A6 /* Pods_Fundos_Itau.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Fundos_Itau.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBA0208F72C412A6182AFA52 /* Pods-Fundos-Itau.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fundos-Itau.release.xcconfig"; path = "Pods/Target Support Files/Pods-Fundos-Itau/Pods-Fundos-Itau.release.xcconfig"; sourceTree = "<group>"; };
+		EE2AF7DDAE42B702F9AF15F9 /* Pods-Fundos-ItauUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fundos-ItauUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Fundos-ItauUITests/Pods-Fundos-ItauUITests.release.xcconfig"; sourceTree = "<group>"; };
+		F07315DD9EA54F1BFE3FB10D /* Pods_Fundos_ItauUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Fundos_ItauUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6E91BD4D2293785C00257AF0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E4F544C693BDF6741D3727D /* Pods_Fundos_Itau.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E91BD612293785D00257AF0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7CE006D2C2FBC3A1DFB1AC82 /* Pods_Fundos_ItauTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E91BD6C2293785D00257AF0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9E51D69EB2E5C372902850B /* Pods_Fundos_ItauUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6E91BD472293785C00257AF0 = {
+			isa = PBXGroup;
+			children = (
+				6E91BD522293785C00257AF0 /* Fundos-Itau */,
+				6E91BD672293785D00257AF0 /* Fundos-ItauTests */,
+				6E91BD722293785D00257AF0 /* Fundos-ItauUITests */,
+				6E91BD512293785C00257AF0 /* Products */,
+				A7D47856B5D9E60607F10604 /* Pods */,
+				958DB2AEF4993519A19B2F98 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		6E91BD512293785C00257AF0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6E91BD502293785C00257AF0 /* Fundos-Itau.app */,
+				6E91BD642293785D00257AF0 /* Fundos-ItauTests.xctest */,
+				6E91BD6F2293785D00257AF0 /* Fundos-ItauUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6E91BD522293785C00257AF0 /* Fundos-Itau */ = {
+			isa = PBXGroup;
+			children = (
+				6E91BD8F22939D4B00257AF0 /* Util */,
+				6E91BD81229384E300257AF0 /* Login */,
+				6E91BD532293785C00257AF0 /* AppDelegate.swift */,
+				6E91BD572293785C00257AF0 /* Main.storyboard */,
+				6E91BD5A2293785D00257AF0 /* Assets.xcassets */,
+				6E91BD5C2293785D00257AF0 /* LaunchScreen.storyboard */,
+				6E91BD5F2293785D00257AF0 /* Info.plist */,
+			);
+			path = "Fundos-Itau";
+			sourceTree = "<group>";
+		};
+		6E91BD672293785D00257AF0 /* Fundos-ItauTests */ = {
+			isa = PBXGroup;
+			children = (
+				6E91BD682293785D00257AF0 /* Fundos_ItauTests.swift */,
+				6E91BD6A2293785D00257AF0 /* Info.plist */,
+			);
+			path = "Fundos-ItauTests";
+			sourceTree = "<group>";
+		};
+		6E91BD722293785D00257AF0 /* Fundos-ItauUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6E91BD732293785D00257AF0 /* Fundos_ItauUITests.swift */,
+				6E91BD752293785D00257AF0 /* Info.plist */,
+			);
+			path = "Fundos-ItauUITests";
+			sourceTree = "<group>";
+		};
+		6E91BD81229384E300257AF0 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				6E91BD87229389AD00257AF0 /* Entity */,
+				6E91BD86229387B900257AF0 /* Protocols */,
+				6E91BD552293785C00257AF0 /* LoginViewController.swift */,
+				6E91BD822293857400257AF0 /* LoginPresenter.swift */,
+				6E91BD842293858000257AF0 /* LoginInteractor.swift */,
+				6E91BD8D2293963B00257AF0 /* LoginRouter.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		6E91BD86229387B900257AF0 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				6E91BD8B22938DEF00257AF0 /* LoginProtocol.swift */,
+			);
+			name = Protocols;
+			sourceTree = "<group>";
+		};
+		6E91BD87229389AD00257AF0 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				6E91BD8922938A4200257AF0 /* Cells.swift */,
+			);
+			name = Entity;
+			sourceTree = "<group>";
+		};
+		6E91BD8F22939D4B00257AF0 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				6E91BD9022939D5900257AF0 /* Constants.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		958DB2AEF4993519A19B2F98 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C8248DDF743D2F60C38321A6 /* Pods_Fundos_Itau.framework */,
+				8B1662734D4A0B6E7EB07E20 /* Pods_Fundos_ItauTests.framework */,
+				F07315DD9EA54F1BFE3FB10D /* Pods_Fundos_ItauUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A7D47856B5D9E60607F10604 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B513D16B8AB4899170F626A9 /* Pods-Fundos-Itau.debug.xcconfig */,
+				CBA0208F72C412A6182AFA52 /* Pods-Fundos-Itau.release.xcconfig */,
+				74B1AECD972CE349A8C3E7E2 /* Pods-Fundos-ItauTests.debug.xcconfig */,
+				7282156C54F358DB2E87CCC5 /* Pods-Fundos-ItauTests.release.xcconfig */,
+				93D35A94DA15C74978BE51CF /* Pods-Fundos-ItauUITests.debug.xcconfig */,
+				EE2AF7DDAE42B702F9AF15F9 /* Pods-Fundos-ItauUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6E91BD4F2293785C00257AF0 /* Fundos-Itau */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6E91BD782293785D00257AF0 /* Build configuration list for PBXNativeTarget "Fundos-Itau" */;
+			buildPhases = (
+				CEEE73DAE28C6371D32B29C2 /* [CP] Check Pods Manifest.lock */,
+				6E91BD4C2293785C00257AF0 /* Sources */,
+				6E91BD4D2293785C00257AF0 /* Frameworks */,
+				6E91BD4E2293785C00257AF0 /* Resources */,
+				3B6982B236F72980D8D448DD /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Fundos-Itau";
+			productName = "Fundos-Itau";
+			productReference = 6E91BD502293785C00257AF0 /* Fundos-Itau.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6E91BD632293785D00257AF0 /* Fundos-ItauTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6E91BD7B2293785D00257AF0 /* Build configuration list for PBXNativeTarget "Fundos-ItauTests" */;
+			buildPhases = (
+				90244976C41659A578D54863 /* [CP] Check Pods Manifest.lock */,
+				6E91BD602293785D00257AF0 /* Sources */,
+				6E91BD612293785D00257AF0 /* Frameworks */,
+				6E91BD622293785D00257AF0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6E91BD662293785D00257AF0 /* PBXTargetDependency */,
+			);
+			name = "Fundos-ItauTests";
+			productName = "Fundos-ItauTests";
+			productReference = 6E91BD642293785D00257AF0 /* Fundos-ItauTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6E91BD6E2293785D00257AF0 /* Fundos-ItauUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6E91BD7E2293785D00257AF0 /* Build configuration list for PBXNativeTarget "Fundos-ItauUITests" */;
+			buildPhases = (
+				80562875BD525D0473F39482 /* [CP] Check Pods Manifest.lock */,
+				6E91BD6B2293785D00257AF0 /* Sources */,
+				6E91BD6C2293785D00257AF0 /* Frameworks */,
+				6E91BD6D2293785D00257AF0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6E91BD712293785D00257AF0 /* PBXTargetDependency */,
+			);
+			name = "Fundos-ItauUITests";
+			productName = "Fundos-ItauUITests";
+			productReference = 6E91BD6F2293785D00257AF0 /* Fundos-ItauUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6E91BD482293785C00257AF0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = Lopes;
+				TargetAttributes = {
+					6E91BD4F2293785C00257AF0 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					6E91BD632293785D00257AF0 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 6E91BD4F2293785C00257AF0;
+					};
+					6E91BD6E2293785D00257AF0 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 6E91BD4F2293785C00257AF0;
+					};
+				};
+			};
+			buildConfigurationList = 6E91BD4B2293785C00257AF0 /* Build configuration list for PBXProject "Fundos-Itau" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6E91BD472293785C00257AF0;
+			productRefGroup = 6E91BD512293785C00257AF0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6E91BD4F2293785C00257AF0 /* Fundos-Itau */,
+				6E91BD632293785D00257AF0 /* Fundos-ItauTests */,
+				6E91BD6E2293785D00257AF0 /* Fundos-ItauUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6E91BD4E2293785C00257AF0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E91BD5E2293785D00257AF0 /* LaunchScreen.storyboard in Resources */,
+				6E91BD5B2293785D00257AF0 /* Assets.xcassets in Resources */,
+				6E91BD592293785C00257AF0 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E91BD622293785D00257AF0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E91BD6D2293785D00257AF0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3B6982B236F72980D8D448DD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Fundos-Itau/Pods-Fundos-Itau-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireObjectMapper/AlamofireObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/GeneralFormatter/GeneralFormatter.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GeneralFormatter.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Fundos-Itau/Pods-Fundos-Itau-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		80562875BD525D0473F39482 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Fundos-ItauUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		90244976C41659A578D54863 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Fundos-ItauTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CEEE73DAE28C6371D32B29C2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Fundos-Itau-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6E91BD4C2293785C00257AF0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E91BD8A22938A4200257AF0 /* Cells.swift in Sources */,
+				6E91BD852293858000257AF0 /* LoginInteractor.swift in Sources */,
+				6E91BD832293857400257AF0 /* LoginPresenter.swift in Sources */,
+				6E91BD8C22938DEF00257AF0 /* LoginProtocol.swift in Sources */,
+				6E91BD562293785C00257AF0 /* LoginViewController.swift in Sources */,
+				6E91BD8E2293963B00257AF0 /* LoginRouter.swift in Sources */,
+				6E91BD542293785C00257AF0 /* AppDelegate.swift in Sources */,
+				6E91BD9122939D5900257AF0 /* Constants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E91BD602293785D00257AF0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E91BD692293785D00257AF0 /* Fundos_ItauTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E91BD6B2293785D00257AF0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E91BD742293785D00257AF0 /* Fundos_ItauUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6E91BD662293785D00257AF0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6E91BD4F2293785C00257AF0 /* Fundos-Itau */;
+			targetProxy = 6E91BD652293785D00257AF0 /* PBXContainerItemProxy */;
+		};
+		6E91BD712293785D00257AF0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6E91BD4F2293785C00257AF0 /* Fundos-Itau */;
+			targetProxy = 6E91BD702293785D00257AF0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6E91BD572293785C00257AF0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6E91BD582293785C00257AF0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6E91BD5C2293785D00257AF0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6E91BD5D2293785D00257AF0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6E91BD762293785D00257AF0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6E91BD772293785D00257AF0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6E91BD792293785D00257AF0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B513D16B8AB4899170F626A9 /* Pods-Fundos-Itau.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4GQA8G5SKY;
+				INFOPLIST_FILE = "Fundos-Itau/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "br.Fundos-Itau";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6E91BD7A2293785D00257AF0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CBA0208F72C412A6182AFA52 /* Pods-Fundos-Itau.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4GQA8G5SKY;
+				INFOPLIST_FILE = "Fundos-Itau/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "br.Fundos-Itau";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6E91BD7C2293785D00257AF0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 74B1AECD972CE349A8C3E7E2 /* Pods-Fundos-ItauTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4GQA8G5SKY;
+				INFOPLIST_FILE = "Fundos-ItauTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "br.Fundos-ItauTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Fundos-Itau.app/Fundos-Itau";
+			};
+			name = Debug;
+		};
+		6E91BD7D2293785D00257AF0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7282156C54F358DB2E87CCC5 /* Pods-Fundos-ItauTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4GQA8G5SKY;
+				INFOPLIST_FILE = "Fundos-ItauTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "br.Fundos-ItauTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Fundos-Itau.app/Fundos-Itau";
+			};
+			name = Release;
+		};
+		6E91BD7F2293785D00257AF0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 93D35A94DA15C74978BE51CF /* Pods-Fundos-ItauUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4GQA8G5SKY;
+				INFOPLIST_FILE = "Fundos-ItauUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "br.Fundos-ItauUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Fundos-Itau";
+			};
+			name = Debug;
+		};
+		6E91BD802293785D00257AF0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EE2AF7DDAE42B702F9AF15F9 /* Pods-Fundos-ItauUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4GQA8G5SKY;
+				INFOPLIST_FILE = "Fundos-ItauUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "br.Fundos-ItauUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Fundos-Itau";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6E91BD4B2293785C00257AF0 /* Build configuration list for PBXProject "Fundos-Itau" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6E91BD762293785D00257AF0 /* Debug */,
+				6E91BD772293785D00257AF0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6E91BD782293785D00257AF0 /* Build configuration list for PBXNativeTarget "Fundos-Itau" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6E91BD792293785D00257AF0 /* Debug */,
+				6E91BD7A2293785D00257AF0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6E91BD7B2293785D00257AF0 /* Build configuration list for PBXNativeTarget "Fundos-ItauTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6E91BD7C2293785D00257AF0 /* Debug */,
+				6E91BD7D2293785D00257AF0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6E91BD7E2293785D00257AF0 /* Build configuration list for PBXNativeTarget "Fundos-ItauUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6E91BD7F2293785D00257AF0 /* Debug */,
+				6E91BD802293785D00257AF0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6E91BD482293785C00257AF0 /* Project object */;
+}
